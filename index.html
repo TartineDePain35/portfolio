@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corentin Roger</title>
+    <link rel="icon" href="img/animated_favicon.gif" />
+
+    <!-- StyleSheets / les feuilles de style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+    <!-- The google fonts / Les polices  -->
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <!-- Les fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+    <!-- Les script / JS scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="vendors/jquery.easings.min.js"></script>
+
+    <!-- scrollOverflow:true / le scroll style-->
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+
+  </head>
+
+  <body>
+
+  <script type="text/javascript">
+        $(window).load(function() {
+          $(".loader").fadeOut("1000");
+        });
+        $(document).ready(function() {
+          $('#fullpage').fullpage({
+            anchors:['accueil', 'aboutme', 'myskills', 'myworks', 'others', 'contactme']});
+          $("#burgerMenu").hide();
+          $("#hamburgerMenu").click(function(){
+            $("#burgerMenu").slideToggle();
+          });
+        });
+
+        $(document).ready(function(){
+          $('#hamburgerMenu').click(function(){
+            $(this).toggleClass('open');
+          });
+        });
+    </script>
+
+<!-- ***** Loader ***** -->
+  <div class="loader">
+
+  </div>
+
+
+<!-- ***** Header begin ****** -->
+  <header>
+    <div id="menuHaut">
+      <!-- ici j'ouvre une autre div pour la partie gauche du menu haut -->
+      <div id="menuHautGauche">
+        <h1><a href="index.html#accueil/accueil"><img src="img/profil2.png" alt="Corentin ROGER, web developper & sound designer"></a></h1>
+        <!-- <a href="#"><h1>C.<span>R.</span></h1></a> -->
+      </div>
+      <!-- ici j'ouvre une div pour la partie droite du menu haut -->
+      <div id="hamburgerMenu">
+        <img src="https://www.elternkindzentrum.com/images/icons/menu-icon.png" alt="menu hamburger">
+      </div>
+      <div id="burgerMenu">
+        <nav>
+          <ul>
+            <li><a href="index.html#aboutme/aboutme">about</a></li>
+            <li><a href="index.html#myskills/myskills">skills</a></li>
+            <li><a href="index.html#myworks/myworks">works</a></li>
+            <li><a href="index.html#others/others">others</a></li>
+            <li><a href="index.html#contactme/contactme">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="menuHautDroit">
+        <nav>
+          <ul>
+            <li><a href="index.html#aboutme/aboutme">about me</a></li>
+            <li><a href="index.html#myskills/myskills">my skills</a></li>
+            <li><a href="index.html#myworks/myworks">my works</a></li>
+            <li><a href="index.html#others/others">others</a></li>
+            <li><a href="index.html#contactme/contactme">contact me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div id="fullpage">
+<!-- ***** First Page ***** -->
+    <div class="section" data-anchor="accueil" id="slider">
+     <div class="slide active" id="slide-1">
+       <div class="intro">
+           <div class="onSlide">
+             <h1>Hi, I am <span>Corentin</span></h1>
+             <h2>FullStack web developper & sound designer</h2>
+             <a href="index.html#contactme/contactme" id="hireMe" class="hideOnSmartphone">hire me</a>
+             <a href="img/CVCorentinRoger.pdf" id="myCV" target="_blank">My CV</a>
+           </div>
+       </div>
+       <img src="img/arrows.gif" alt="mouse scroll" id="mouse">
+     </div>
+     <div class="slide" id="slide-2">
+       <div class="intro">
+         <div class="onSlide">
+           <h1>Wanna know more about me</h1>
+           <h2>Music, travels, tv-shows, movies ...</h2>
+           <a href="index.html#others/others" id="hireMe">More about me</a>
+         </div>
+       </div>
+       <img src="img/arrows.gif" alt="mouse scroll" id="mouse">
+     </div>
+    </div>
+<!-- ***** Second Page ***** -->
+  	<div class="section" data-anchor="aboutme" id="aboutMe">
+      <img class="goUp" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+      <div class="flex2">
+        <div class="flex2Left">
+          <h3 class="sideTitle hideOnSmartphone">About Me</h3>
+        </div>
+        <div class="flex2Right">
+          <h3>Hello, people from the world.</h3>
+          <p>Moi c'est Corentin. Je suis un jeune développeur web au parcours quelque peu atypique. En effet, après de superbes années étudiantes et professionnelles en gestion/management commercial, je vis désormais de passionnantes journées plongé dans le code. Très curieux et autodidacte, je me forme depuis de nombreuses années par moi-même en réalisant de petits sites web pour des amis et/ou associations. Mais cela ne m'a pas suffit.</p>
+          <p>Début 2018, je décide donc d’effectuer un grand saut professionnel, de prendre un vrai virage et de devenir développeur web ! Suite à une formation de 400 heures, j’ai obtenu un titre RNCP (équivalent bac+2) et acquis de nombreuses compétences sur différentes technologies, essentielles à mon épanouissement.</p>
+          <p>Bien que je sois encore un « petit jeunot » dans mon nouveau secteur d’activité, je travaille aujourd’hui sur divers projets utilisant différents langages du web. J’adore tester et découvrir de nouvelles méthodes de travail. C’est certainement cela qui me plaît le plus. Aussi, j'adorerais continuer de m'épanouir en travaillant avec vous sur vos projets.</p>
+          <p>Passionné de musique, je porte un véritable intérêt à tout ce qui se rapporte au monde de l’audio. Musicien, je joue régulièrement avec des amis. Guitare, chant, ukulélé, cajon, j’aime tout ce qui peut faire du bruit. Mais pas seulement, j'ai réalisé le doublage et l’habillage audio de vidéos promotionnelles, courts métrages pour différents secteurs d’activité. Un peu de radio également en loisir, j’aime l’ambiance d’un studio.</p>
+          <p>Rencontrons nous autour d’un café.</p>
+          <p class="handWritting">Corentin.</p>
+        </div>
+      </div>
+      <img class="goDown" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+    </div>
+<!-- ***** Third Page ***** -->
+  	<div class="section" data-anchor="myskills" id="mySkills">
+      <img class="goUp" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+      <div class="flex1 totalWidth">
+        <div class="flex1Left mySkillsLogo">
+          <div class="skillsIcons">
+            <img src="img/skills/HTML5.png">
+            <p>HTML 5</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/CSS3.png">
+            <p>CSS 3</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/JS.png">
+            <p>JavaScript</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/jquery.png">
+            <p>Jquery</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/PHP.png">
+            <p>PHP</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/mysql.png">
+            <p>MySQL</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/symfony.png">
+            <p>Symfony</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/Boostrap.png">
+            <p>Bootstrap</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/wordpress.png">
+            <p>Wordpress</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/git.png">
+            <p>Github</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/Atom.png">
+            <p>Atom</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/Responsive&#32;Design.png">
+            <p>Responsive Design</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/photoshop.png">
+            <p>Photoshop</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/premiere.png">
+            <p>Première Pro</p>
+          </div>
+          <div class="skillsIcons">
+            <img src="img/skills/audition.png">
+            <p>Audition</p>
+          </div>
+        </div>
+        <div class="flex1Right">
+          <h3 class="sideTitle hideOnSmartphone">My Skills</h3>
+        </div>
+      </div>
+      <img class="goDown" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+    </div>
+<!-- ***** Fourth Page Page ***** -->
+  	<div class="section" data-anchor="myworks" id="myWorks">
+      <div class="slide active" id="otherSlide-1">
+       <img class="goUp" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+       <div class="intro">
+        <div class="otherSlide">
+         <h4 class="otherTitleLeft">Web :</h4>
+          <div class="flex1 totalWidth">
+            <div class="flex1Left mySkillsLogo otherAboutMe">
+                <div class="musicLike" style="background-image: url(img/works/LaSabliere.jpg); background-size: cover; background-position: center;">
+                <a href="http://lasablierebuvette.fr/" target="_blank"><p class="MusicInfo">La Sablière<br>Buvette</p></a>
+
+                </div>
+              <div class="musicLike" style="background-image: url(img/works/ViniPreview.png); background-size: cover; background-position: center;">
+                <a href="http://www.vinicircus.com" target="_blank"><p class="MusicInfo">Vini Circus <br>Festival</p></a>
+
+              </div>
+              <div class="musicLike" style="background-image: url(index.html); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Livin' The Quest <br>Jeu en ligne <br> Projet en cours </p>
+
+              </div>
+            </div>
+            <div class="flex1Right hideOnSmartphone">
+              <h3 class="sideTitle">My Works</h3>
+            </div>
+          </div>
+        </div>
+       </div>
+       <img class="goDown" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+      </div>
+      <div class="slide" id="otherSlide-2">
+        <img class="goUp" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+        <div class="intro">
+         <div class="otherSlide">
+          <h4 class="otherTitleRight">Sound Design :</h4>
+           <div class="flex2 totalWidth">
+             <div class="flex2Left">
+               <h3 class="sideTitle hideOnSmartphone">My Works</h3>
+             </div>
+             <div class="flex2Right mySkillsLogo otherAboutMe">
+               <div>
+                <iframe class="youTubeVideo" width="290" height="190" src="https://www.youtube.com/embed/oFKJrjMA1AI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+               </div>
+               <div>
+                 <iframe class="youTubeVideo" width="290" height="190" src="https://www.youtube.com/embed/C4Mms8sA16E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+               </div>
+             </div>
+           </div>
+         </div>
+        </div>
+        <img class="goDown" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+       </div>
+
+    </div>
+<!-- ***** Fifth Page ***** -->
+    <div class="section" data-anchor="others" id="Others">
+     <div class="slide active" id="otherSlide-1">
+      <img class="goUp" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+      <div class="intro">
+       <div class="otherSlide">
+        <h4 class="otherTitleLeft">Some music that I love :</h4>
+         <div class="flex1 totalWidth">
+           <div class="flex1Left mySkillsLogo otherAboutMe">
+             <div class="musicLike" style="background-image: url(img/Others/Music/James-Bay.jpg); background-size: cover; background-position: center;">
+               <p class="MusicInfo">James Bay</p>
+             </div>
+             <div class="musicLike" style="background-image: url(img/Others/Music/Ben-Caplan.jpg); background-size: cover; background-position: center;">
+               <p class="MusicInfo">Ben Caplan</p>
+             </div>
+             <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/Music/Coldplay.jpg); background-size: cover; background-position: center;">
+               <p class="MusicInfo">Coldplay</p>
+             </div>
+             <div class="musicLike" style="background-image: url(img/Others/Music/The-Lumineers.jpg); background-size: cover; background-position: center;">
+               <p class="MusicInfo">The Lumineers</p>
+             </div>
+             <div class="musicLike hideOnTablet" style="background-image: url(img/Others/Music/Newton-Faulkner.jpg); background-size: cover; background-position: center;">
+               <p class="MusicInfo">Newton Faulkner</p>
+             </div>
+             <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/Music/Hozier.jpg); background-size: cover; background-position: center;">
+               <p class="MusicInfo">Hozier</p>
+             </div>
+             <div class="musicLike" style="background-image: url(img/Others/Music/Angus-et-Julia-Stone.jpg); background-size: cover; background-position: center;">
+               <p class="MusicInfo">Angus & Julia Stone</p>
+             </div>
+             <div class="musicLike hideOnTablet" style="background-image: url(img/Others/Music/Beatles.jpg); background-size: cover; background-position: center;">
+               <p class="MusicInfo">The Beatles</p>
+             </div>
+             <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/Music/Imagine-Dragons.jpg); background-size: cover; background-position: center;">
+               <p class="MusicInfo">Imagine Dragons</p>
+             </div>
+             <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/Music/Lana-Del-Rey.jpg); background-size: cover; background-position: center;">
+               <p class="MusicInfo">Lana Del Rey</p>
+             </div>
+             <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/Music/José-Gonzales.jpg); background-size: cover; background-position: center;">
+               <p class="MusicInfo">José Gonzalez</p>
+             </div>
+             <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/Music/Red-Hot-Chili-Peppers.jpg); background-size: cover; background-position: center;">
+               <p class="MusicInfo">Red Hot Chili Peppers</p>
+             </div>
+           </div>
+           <div class="flex1Right hideOnSmartphone">
+             <h3 class="sideTitle">More stuff about Me</h3>
+           </div>
+         </div>
+       </div>
+      </div>
+      <img class="goDown" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+     </div>
+     <div class="slide" id="otherSlide-2">
+       <img class="goUp" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+       <div class="intro">
+        <div class="otherSlide">
+         <h4 class="otherTitleRight">Some places I've been to :</h4>
+          <div class="flex2 totalWidth">
+            <div class="flex2Left">
+              <h3 class="sideTitle hideOnSmartphone">More stuff about Me</h3>
+            </div>
+            <div class="flex2Right mySkillsLogo otherAboutMe">
+              <div class="travelMade" style="background-image: url(img/Others/Travels/Croatia.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Croatia</p>
+              </div>
+              <div class="travelMade hideOnSmartphone" style="background-image: url(img/Others/Travels/Milano.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Milano</p>
+              </div>
+              <div class="travelMade hideOnSmartphone" style="background-image: url(img/Others/Travels/Sevilla.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Sevilla</p>
+              </div>
+              <div class="travelMade" style="background-image: url(img/Others/Travels/England.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">England</p>
+              </div>
+              <div class="travelMade" style="background-image: url(img/Others/Travels/Brazil.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Brazil</p>
+              </div>
+              <div class="travelMade hideOnTablet" style="background-image: url(http://www.corentinroger.bzh/img/Others/Travels/Hamburg.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Hamburg</p>
+              </div>
+              <div class="travelMade" style="background-image: url(img/Others/Travels/Indonesia.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Indonesia</p>
+              </div>
+              <div class="travelMade hideOnSmartphone" style="background-image: url(img/Others/Travels/Greece.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Greece</p>
+              </div>
+              <div class="travelMade hideOnTablet" style="background-image: url(img/Others/Travels/Ireland.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Ireland</p>
+              </div>
+              <div class="travelMade hideOnSmartphone" style="background-image: url(img/Others/Travels/Barcelona.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Barcelona</p>
+              </div>
+              <div class="travelMade hideOnSmartphone" style="background-image: url(img/Others/Travels/Brussels.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Brussels</p>
+              </div>
+              <div class="travelMade hideOnSmartphone" style="background-image: url(img/Others/Travels/Brittany.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Brittany !!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+       <img class="goDown" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+      </div>
+     <div class="slide" id="otherSlide-3">
+       <img class="goUp" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+       <div class="intro">
+        <div class="otherSlide">
+         <h4 class="otherTitleLeft">Some TV-Shows that I love :</h4>
+          <div class="flex1 totalWidth">
+            <div class="flex1Left mySkillsLogo otherAboutMe">
+              <div class="musicLike hideOnSmartphone" style="background-image: url(https://img-www.tf-cdn.com/show/2/raising-hope.jpeg?_v=20150914184532&w=1024&h=512&dpr=1&auto=compress&fm=pjpg&fit=crop&crop=faces%2Ctop); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Raising Hope</p>
+              </div>
+              <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/TVShows/Sons-of-Anarchy.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Sons of Anarchy</p>
+              </div>
+              <div class="musicLike" style="background-image: url(img/Others/TVShows/Game-of-Thrones.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Game of thrones</p>
+              </div>
+              <div class="musicLike hideOnTablet" style="background-image: url(img/Others/TVShows/American-Dad.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">American dad</p>
+              </div>
+              <div class="musicLike hideOnTablet" style="background-image: url(img/Others/TVShows/True-Bloodjpg.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">True blood</p>
+              </div>
+              <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/TVShows/Dardevil.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Dardevil</p>
+              </div>
+              <div class="musicLike" style="background-image: url(img/Others/TVShows/Band-of-Brother.jpeg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Band of brothers</p>
+              </div>
+              <div class="musicLike" style="background-image: url(img/Others/TVShows/Vikings.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Vikings</p>
+              </div>
+              <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/TVShows/Bates-Motel.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Bates motel</p>
+              </div>
+              <div class="musicLike" style="background-image: url(img/Others/TVShows/Malcom.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Malcom</p>
+              </div>
+              <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/TVShows/Kaamelott.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Kaamelott</p>
+              </div>
+              <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/TVShows/Dexter.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Dexter</p>
+              </div>
+            </div>
+            <div class="flex1Right">
+              <h3 class="sideTitle hideOnSmartphone">More stuff about Me</h3>
+            </div>
+          </div>
+        </div>
+       </div>
+       <img class="goDown" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+     </div>
+     <div class="slide" id="otherSlide-4">
+       <img class="goUp" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+       <div class="intro">
+        <div class="otherSlide">
+         <h4 class="otherTitleRight">Some of my favorite movies :</h4>
+          <div class="flex2 totalWidth">
+            <div class="flex2Left">
+              <h3 class="sideTitle hideOnSmartphone">More stuff about Me</h3>
+            </div>
+            <div class="flex2Right mySkillsLogo otherAboutMe">
+              <div class="travelMade" style="background-image: url(img/Others/Movies/Leon.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Léon</p>
+              </div>
+              <div class="travelMade" style="background-image: url(img/Others/Movies/Lord-of-the-Rings.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Lord of the rings</p>
+              </div>
+              <div class="travelMade hideOnSmartphone" style="background-image: url(img/Others/Movies/Cornetto-Trilogy.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">The cornetto Trilogy</p>
+              </div>
+              <div class="travelMade" style="background-image: url(img/Others/Movies/Secret-life-of-Walter-Mitty.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">The secret life of Walter Mitty</p>
+              </div>
+              <div class="travelMade hideOnSmartphone" style="background-image: url(img/Others/Movies/Star-Wars.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Star Wars</p>
+              </div>
+              <div class="travelMade hideOnTablet" style="background-image: url(img/Others/Movies/Remember-Me.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Remember me</p>
+              </div>
+              <div class="travelMade hideOnSmartphone" style="background-image: url(img/Others/Movies/Sherlock-Holmes.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Sherlock Holmes</p>
+              </div>
+              <div class="travelMade" style="background-image: url(img/Others/Movies/La-Haut.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">La haut</p>
+              </div>
+              <div class="travelMade hideOnTablet" style="background-image: url(img/Others/Movies/Bourne.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">The Jason Bourne legacy</p>
+              </div>
+              <div class="travelMade hideOnSmartphone" style="background-image: url(img/Others/Movies/Dollar-Trillogy.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Dollars trilogy</p>
+              </div>
+              <div class="travelMade hideOnSmartphone" style="background-image: url(img/Others/Movies/Braveheart.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Braveheart</p>
+              </div>
+              <div class="travelMade hideOnSmartphone" style="background-image: url(img/Others/Movies/Space-Jam.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Space Jam</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+       <img class="goDown" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+     </div>
+     <div class="slide" id="otherSlide-5">
+       <img class="goUp" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+       <div class="intro">
+        <div class="otherSlide">
+         <h4 class="otherTitleLeft">Some other things I like to do :</h4>
+          <div class="flex1 totalWidth">
+            <div class="flex1Left mySkillsLogo otherAboutMe">
+              <div class="musicLike" style="background-image: url(img/Others/More/Guitare.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Playing guitare</p>
+              </div>
+              <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/More/Comic.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Reading Comic Books</p>
+              </div>
+              <div class="musicLike" style="background-image: url(img/Others/More/Beer.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Crafting my own beer</p>
+              </div>
+              <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/More/NBA.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Watching NBA</p>
+              </div>
+              <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/More/RP-Games.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Playing RP Games</p>
+              </div>
+              <div class="musicLike" style="background-image: url(img/Others/More/Writing.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Writing stories</p>
+              </div>
+              <div class="musicLike hideOnTablet" style="background-image: url(img/Others/More/Wood.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Crafting wood furniture </p>
+              </div>
+              <div class="musicLike" style="background-image: url(img/Others/More/Riding.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Riding</p>
+              </div>
+              <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/More/Cooking.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Cooking</p>
+              </div>
+              <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/More/Spearfishing.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Spearfishing</p>
+              </div>
+              <div class="musicLike hideOnTablet" style="background-image: url(img/Others/More/Gaming.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Playing video games</p>
+              </div>
+              <div class="musicLike hideOnSmartphone" style="background-image: url(img/Others/More/Cofee.jpg); background-size: cover; background-position: center;">
+                <p class="MusicInfo">Drinking coffee</p>
+              </div>
+            </div>
+            <div class="flex1Right">
+              <h3 class="sideTitle hideOnSmartphone">More stuff about Me</h3>
+            </div>
+          </div>
+        </div>
+       </div>
+       <img class="goDown" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+     </div>
+    </div>
+<!-- ***** Sixth Page ***** -->
+  	<div class="section" data-anchor="contactme" id="contactMe">
+      <img class="goUp" src="http://vedas.com.tr/img/slide/downok.gif" alt="fleche vers bas">
+      <div class="flex2">
+        <div class="flex2Left hideOnSmartphone">
+          <h3>Contact me</h3>
+        </div>
+        <div class="flex2Right mySkillsLogo contactDisplay">
+          <div class="contactInfo">
+            <p>+33 6 75 90 32 88</p>
+            <p>corentin.roger@live.fr</p>
+            <p>corentinroger.bzh</p>
+          </div>
+          <div class="contactInfo">
+            <p>44 470 - Thouaré sur Loire, FR</p>
+          </div>
+          <div id="socialLinks">
+            <a href="https://www.linkedin.com/in/corentin-roger-a0b75052/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.pinterest.fr/corentinroger44/" target="_blank"><i class="fab fa-pinterest-square"></i></a>
+            <a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX5k79xc4NSUM?si=B_eXepTZTR-13rf0h0L5kQ" target="_blank"><i class="fab fa-spotify"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </body>
+</html>
